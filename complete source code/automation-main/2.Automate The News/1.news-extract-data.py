@@ -17,7 +17,7 @@ titles = []
 subtitles = []
 links = []
 for container in containers:
-    title = container.find_element(by='xpath', value='./a/h2').text
+    title = container.find_element(by='xpath', value='./a/h3').text
     subtitle = container.find_element(by='xpath', value='./a/p').text
     link = container.find_element(by='xpath', value='./a').get_attribute('href')
     titles.append(title)
